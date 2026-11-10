@@ -56,17 +56,18 @@ public class MainActivity extends AppCompatActivity {
                         if (liczba == wylosowanaLiczba) {
                             przyciski[liczba-1].setBackgroundColor(Color.GREEN);
                             wynik.setText("Dobrze zgadłeś/aś!");
-                            licznik++;
+                            finish();
                         } else {
                             przyciski[liczba-1].setBackgroundColor(Color.RED);
                             wynik.setText("Źle zgadłeś/aś.");
                             licznik++;
                         }
-                        if (j < wylosowanaLiczba){
+
+                        /* if (j < wylosowanaLiczba){
 
                         } else if (j > wylosowanaLiczba) {
 
-                        }
+                        } */
                     }
             );
         }
